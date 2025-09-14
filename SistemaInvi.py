@@ -2,7 +2,7 @@
 
 while True:
 
-    print("=====Bienvenido al sistema de control de inventario====")
+    print("📦=====Bienvenido al sistema de control de inventario====📦")
 
     producto = input("Ingrese el nombre del producto: ").lower()
     print(f"El producto a agregado es: {producto}")
@@ -15,9 +15,8 @@ while True:
 
     valor_total = cantidad * precio_unitario
     print(f"El valor total del producto {producto} es: ${valor_total}")
-
-    print("=====Resumen del inventario=====")
-
+    
+    print("\n📑=====Resumen del inventario=====📑")
     print("El producto agregado es:", producto)
     print("La cantidad agregada es:", cantidad)
     print(f"El precio unitario es: ${precio_unitario}")
