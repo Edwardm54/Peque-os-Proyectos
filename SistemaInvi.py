@@ -5,7 +5,8 @@ while True:
     print("📦=====Bienvenido al sistema de control de inventario====📦")
 
     producto = input("Ingrese el nombre del producto: ").lower()
-    print(f"El producto a agregado es: {producto}")
+    print(f"El producto agregado es: {producto}")
+   
 
     cantidad = int(input("Ingrese la cantidad que desea agregar: "))
     print(f"Usted agrego: '{cantidad}' unidades del producto {producto}")
@@ -22,7 +23,7 @@ while True:
     print(f"El precio unitario es: ${precio_unitario}")
     print(f"Valor total del inventario es: ${valor_total}")
 
-    salir = input("Desea salir del sistema? (s/n): ").lower()
+    salir = input("\nDesea salir del sistema? (s/n): ").lower()
     if salir == "s":
-            print("Gracias por usar el sistema de control de inventario...")
+            print("Gracias por usar el sistema de control de inventario...😎")
             break
