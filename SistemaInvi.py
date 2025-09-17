@@ -1,11 +1,12 @@
 #Sistema de control de inventario 
 
-print("📦=====BIENVENIDO AL SISTEMA DE CONTROL DE INVENTARIO=====📦")
+bienvenida = "📦=====BIENVENIDO AL SISTEMA DE CONTROL DE INVENTARIO=====📦"
+print(bienvenida) #.strip("=") Util en muchos aspectos
 
 while True:
 
     producto = input("Ingrese el producto a agregar: ").lower()
-    print(f"El producto agregado es: {producto}")
+    print(f"El producto agregado es: {producto}.") #Se puede colocar Slipt dentro de tu variable Producto
 
     cantidad = int(input("\nIngrese la cantidad que desee almacenar: "))
     print(f"La cantidad almacenada es: {cantidad}")
