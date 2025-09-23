@@ -12,10 +12,10 @@ while True:
     print(f"La cantidad almacenada es: {cantidad}")
 
     precio_unitario = float(input("\nIngrese el precio unitario del producto: "))
-    print(f"El precio unitario del producto almacenado es: {precio_unitario}")
+    print(f"El precio unitario del producto almacenado es: ${precio_unitario}")
 
     valor_total = cantidad * precio_unitario
-    print(f"\nEl precio total del producto es el siguiente: {valor_total}")
+    print(f"\nEl precio total del producto es el siguiente: ${valor_total}")
 
     print("\n📑=====RESUMEN DE LA OPERACIÓN=====📑") 
     print(f"El producto agregado es: {producto}")
