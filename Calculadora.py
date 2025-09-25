@@ -1,40 +1,50 @@
 #Calculadora 
 
-while True:
+print("🧮=====calculadora=====🧮".upper())
 
-    print("🧮=====CALCULADORA=====🧮")
+while True: 
 
-    num1 = float(input("Ingrese el primer numero: "))
-    num2 = float(input("Ingrese el segundo numero: "))
+    num1 = int(input("Ingrese el primer numero: "))
+    num2 = int(input("Ingrese el segundo numero: "))
 
-    print("Operaciones disponibles 👇")
+    #Operadores aritméticos disponibles
+
+    print("="* 30)
+
+    print("\noperaciones disponibles 👇".title())
     print("1. Suma")
     print("2. Resta")
     print("3. Multiplicacion")
     print("4. Division")
 
-    opcion = input("Elija una opcion del 1-4: ")
+    print("="* 30)
+
+    #Pidiendo al usuario que escoja una de las 4 opciones
+    opcion = input("\nEncoje una opcion del 1 al 4: ")
 
     if opcion == "1":
-        print(f"EL resultado de la suma es: {num1 + num2}")
+        print("El resultado de la suma es: {}".format(num1 + num2))
 
     elif opcion == "2":
-        print(f"El resultado de la resta es: {num1 - num2}")
+        print("El resultado de la resta es: {}".format(num1 + num2))
 
     elif opcion == "3":
-        print(f"El resultado de la multiplicacion es: {num1 * num2}")
+        print("El resultado de la multiplicacion es: {}".format(num1 + num2))
 
     elif opcion == "4":
         if num2 != 0:
-            print(f"El resultado de la division es: {num1 / num2}")
+            print("El resultado de la division es: {}".format(num1 + num2))
         else:
-            print("No puedes dividir entre 0")
+            print("Error no se puede dividir entre 0")
 
     else:
-            print("\nError opcion incorrecta!")
+        print("Error operación incorrecta ❌")
 
+    print("="* 30)
 
-    salir = input("Deseas salir? (s/n): ")
+    #Saliendo del programa 
+
+    salir = input("\nDeseas salir del programa? (s/n): ").lower()
     if salir == "s":
-        print("Gracias por usar la calculadora!😎")
+        print("🧮Gracias por usar la calculadora! 🧮".title())
         break
