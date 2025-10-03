@@ -1,55 +1,48 @@
 #Sistema de control de inventario 
 
-print("📦bienvenido al sistema de control de inventario📦".upper())
-
-#Pidiéndole al usuario que ingrese el producto, cantidad y valor unitario
+print("🛒bienvenido al sistema de control de inventario🛒".title())
 
 while True:
 
-    print("=" * 50)
+    #Pidiéndole al usuario que ingrese el producto, cantidad y valor unitario
 
-    producto = input("Ingrese los productos: ").lower()
+    producto = input("Ingrese los producto: ").lower()
     cantidad = int(input("Ingrese la cantidad: "))
-    precio_unitario = float(input("Ingrese el valor unitario: "))
+    precio_unitario = float(input("Ingrese el precio unitario: "))
 
-    #Valor total del producto
     valor_total = cantidad * precio_unitario
 
-    print("=" * 50)
+    print("-" * 50)
 
-    #Resumen de la operación
-
-    print("📑\nresumen de la operación📑".upper())
-    print("=" * 50)
-    print(f"➡️ Los productos agregados son: {producto.title()}")
+    print("\nResumen de la operación 📑")
+    print(f"➡️ Los productos agregados son: {[producto.title()]}")
     print(f"➡️ Cantidad agregada: {cantidad}")
-    print(f"➡️ Precio unitario del producto: ${precio_unitario:.2f}")
-    print(f"💰 Valor total: ${valor_total:.2f}")
+    print(f"➡️ Precio unitario: {precio_unitario}")
+    print(f"💰 Valor total: {valor_total}")
 
-    print("=" * 50)
+    print("-" * 50)
 
-    #Pidiéndole al usuario que ingrese otro producto
+    #Pidiendo al usuario otros productos
 
-    producto = input("Ingrese los productos: ").lower().strip().title()
-    cantidad = int(input("Ingrese la cantidad: "))
-    precio_unitario = float(input("Ingrese el valor unitario: "))
+    producto2 = input("Otros productos: ").lower()
+    cantidad2 = int(input("Ingrese la cantidad: "))
+    precio_unitario2 = float(input("Ingrese el precio unitario: "))
 
-    #Valor total del producto
-    valor_total = cantidad * precio_unitario
+    valor_total2 = cantidad2 * precio_unitario2
 
-    #Resumen de la operación
+    print("-" * 50)
 
-    print("📑\nresumen de la operación📑".upper())
-    print("=" * 50)
-    print(f"Los productos agregados son: ${producto}")
-    print(f"Cantidad agregada: ${cantidad}")
-    print(f"Precio unitario de los productos: ${precio_unitario}")
-    print(f"Valor total de la operación: ${valor_total}")
-    print("=" * 50)
+    print("\nResumen de la operación 📑")
+    print(f"➡️ Otros productos agregados son: {[producto2.title()]}")
+    print(f"➡️ Cantidad agregada: {cantidad2}")
+    print(f"➡️ Precio unitario: {precio_unitario2}")
+    print(f"💰 Valor total: {valor_total2}")
+
+    print("-" * 50)
 
     #Saliendo del programa con el bucle while o regresando al inicio 
 
     salir = input("Deseas salir del programa? (s/n): ").lower()
     if salir == "s":
-        print("🛒 Gracias por usar el sistema de control de inventario 🛒".upper())
+        print("🛒gracias por usar el sistema de gestión de inventario🛒".title())
         break
