@@ -2,49 +2,52 @@
 
 print("🧮=====calculadora=====🧮".upper())
 
-while True: 
+while True:
 
-    num1 = int(input("Ingrese el primer numero: "))
-    num2 = int(input("Ingrese el segundo numero: "))
+    a = float(input("Ingrese el primer numero: "))
+    b = float(input("Ingrese el segundo numero: "))
 
-    #Operadores aritméticos disponibles
+    print("-" * 50)
 
-    print("="* 30)
+    #Operaciones aritmeticos disponibles
 
-    print("\noperaciones disponibles 👇".title())
+    print("operaciones disponibles👇".title())
     print("1. Suma")
     print("2. Resta")
     print("3. Multiplicacion")
     print("4. Division")
+    print("5. Modulo")
 
-    print("="* 30)
+    print("-" * 50)
 
     #Pidiendo al usuario que escoja una de las 4 opciones
-    opcion = input("\nEncoje una opcion del 1 al 4: ")
+
+    opcion = input("Seleccione una opcion del 1-4: ")
 
     if opcion == "1":
-        print("El resultado de la suma es: {}".format(num1 + num2))
+        print(f"El resultado de la suma es: {a + b}")
 
     elif opcion == "2":
-        print("El resultado de la resta es: {}".format(num1 + num2))
+        print(f"El resultado de la resta es: {a - b}")
 
     elif opcion == "3":
-        print("El resultado de la multiplicacion es: {}".format(num1 + num2))
+        print(f"El resultado de la multiplicación es: {a * b:.2f}")
 
     elif opcion == "4":
-        if num2 != 0:
-            print("El resultado de la division es: {}".format(num1 + num2))
+        if b != 0:
+            print(f"El resultado de la division es: {a / b:.2f}")
         else:
-            print("Error no se puede dividir entre 0")
+            print("No se puede dividir por 0")
+
+    elif opcion == "5":
+        print(f"El resultado del modulo es: {a % b}")
 
     else:
         print("Error operación incorrecta ❌")
 
-    print("="* 30)
+    #Saliendo del programa
 
-    #Saliendo del programa 
-
-    salir = input("\nDeseas salir del programa? (s/n): ").lower()
+    salir = input("Deseas salir del programa (s/n): ").lower()
     if salir == "s":
-        print("🧮Gracias por usar la calculadora! 🧮".title())
+        print("🧮gracias por usar la calculadora🧮".title())
         break
