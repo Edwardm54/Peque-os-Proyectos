@@ -9,7 +9,7 @@ while True:
 
     print("-" * 50)
 
-    #Operaciones aritmeticos disponibles
+    #Operaciones aritméticos disponibles
 
     print("operaciones disponibles👇".title())
     print("1. Suma")
