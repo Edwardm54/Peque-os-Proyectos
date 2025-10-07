@@ -3,7 +3,6 @@ print("AQUÍ PUEDE COMPROBAR SU ES MAYOR O MENOR DE EDAD!")
 while True:
 
     edad = int(input("Ingrese su edad: "))
-    print("Su edad es:", edad)
 
     if edad >= 18:
         print("Usted es mayor de edad!")
