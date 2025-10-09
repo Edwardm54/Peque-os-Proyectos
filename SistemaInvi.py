@@ -8,7 +8,7 @@ while True:
 
     producto = input("Ingrese los producto: ").lower()
     cantidad = int(input("Ingrese la cantidad: "))
-    precio_unitario = float(input("Ingrese el precio unitario: "))
+    precio_unitario = float(input("Ingrese el precio unitario en $: "))
 
     valor_total = cantidad * precio_unitario
 
@@ -17,8 +17,8 @@ while True:
     print("\nResumen de la operación 📑")
     print(f"➡️ Los productos agregados son: {[producto.title()]}")
     print(f"➡️ Cantidad agregada: {cantidad}")
-    print(f"➡️ Precio unitario: {precio_unitario}")
-    print(f"💰 Valor total: {valor_total}")
+    print(f"➡️ Precio unitario: ${precio_unitario}")
+    print(f"💰 Valor total: ${valor_total}")
 
     print("-" * 50)
 
@@ -26,7 +26,7 @@ while True:
 
     producto2 = input("Otros productos: ").lower()
     cantidad2 = int(input("Ingrese la cantidad: "))
-    precio_unitario2 = float(input("Ingrese el precio unitario: "))
+    precio_unitario2 = float(input("Ingrese el precio unitario en $: "))
 
     valor_total2 = cantidad2 * precio_unitario2
 
@@ -35,8 +35,8 @@ while True:
     print("\nResumen de la operación 📑")
     print(f"➡️ Otros productos agregados son: {[producto2.title()]}")
     print(f"➡️ Cantidad agregada: {cantidad2}")
-    print(f"➡️ Precio unitario: {precio_unitario2}")
-    print(f"💰 Valor total: {valor_total2}")
+    print(f"➡️ Precio unitario: ${precio_unitario2}")
+    print(f"💰 Valor total: ${valor_total2}")
 
     print("-" * 50)
 
