@@ -6,7 +6,7 @@ while True:
 
     #Pidiéndole al usuario que ingrese el producto, cantidad y valor unitario
 
-    producto = input("Ingrese los producto: ").lower()
+    producto = input("Ingrese los producto: ")
     cantidad = int(input("Ingrese la cantidad: "))
     precio_unitario = float(input("Ingrese el precio unitario en $: "))
 
@@ -14,7 +14,7 @@ while True:
 
     print("-" * 50)
 
-    print("\nResumen de la operación 📑")
+    print("\nResumen de la operación 📑".upper())
     print(f"➡️ Los productos agregados son: {[producto.title()]}")
     print(f"➡️ Cantidad agregada: {cantidad}")
     print(f"➡️ Precio unitario: ${precio_unitario}")
@@ -24,7 +24,7 @@ while True:
 
     #Pidiendo al usuario otros productos
 
-    producto2 = input("Otros productos: ").lower()
+    producto2 = input("Otros productos: ")
     cantidad2 = int(input("Ingrese la cantidad: "))
     precio_unitario2 = float(input("Ingrese el precio unitario en $: "))
 
@@ -32,7 +32,7 @@ while True:
 
     print("-" * 50)
 
-    print("\nResumen de la operación 📑")
+    print("\nResumen de la operación 📑".upper())
     print(f"➡️ Otros productos agregados son: {[producto2.title()]}")
     print(f"➡️ Cantidad agregada: {cantidad2}")
     print(f"➡️ Precio unitario: ${precio_unitario2}")
@@ -42,7 +42,7 @@ while True:
 
     #Saliendo del programa con el bucle while o regresando al inicio 
 
-    salir = input("Deseas salir del programa? (s/n): ").lower()
+    salir = input("Deseas salir del programa? (s/n): ".lower())
     if salir == "s":
         print("🛒gracias por usar el sistema de gestión de inventario🛒".title())
         break
