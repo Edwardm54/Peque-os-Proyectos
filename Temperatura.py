@@ -5,7 +5,7 @@ while True:
     if temperatura >= 30:
         print("Hace mucho calor!🥵")
 
-    elif 0 <= temperatura < 30:
+    elif 0 < temperatura < 30:
         print("Hace un clima frio!🥶")
 
     salir = input("Deseas salir? (s/n): ").lower()
