@@ -1,10 +1,11 @@
 from datetime import datetime
 
 nombre = input("Ingresa tu nombre: ")
-edad = int(input("Ingresa tu edad: "))
+edad = int(input("Tu edad es: "))
 
 ano_actual = datetime.now().year
-edad_2050 = edad + (2050 - ano_actual)
+ano_2100 = edad + (2100 - ano_actual)
 
-print(f"Saludos {nombre.capitalize()}, usted tiene {edad} de edad!")
-print(f"Para el ano 2050 usted tendrá: {edad_2050} wow!")
+print(f"\nSaludos {nombre.capitalize()} tu edad es {edad}!")
+
+print(f"En el ano 2100 usted tendrá: {ano_2100} wow")
